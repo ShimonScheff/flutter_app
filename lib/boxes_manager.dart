@@ -28,12 +28,13 @@ class _BoxesManagerState extends State<BoxesManager> {
       Container(
           margin: EdgeInsets.all(10.0),
           child: RaisedButton(
+              color: Theme.of(context).primaryColor,
               onPressed: () {
                 setState(() {
-                  boxes.add('Another');
+                  boxes.add('Anothers');
                 });
               },
-              child: Text('Add Box'))),
+              child: Text('Add Another Box', style: TextStyle(color: Colors.white),))),
       Boxes(boxes)
     ]);
   }
