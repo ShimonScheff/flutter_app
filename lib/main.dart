@@ -113,6 +113,8 @@ class _MyHomePageState extends State<MyHomePage> {
 */
 import 'package:flutter/material.dart';
 
+import './boxes_manager.dart';
+
 main() {
   runApp(MyApp());
 }
@@ -120,12 +122,14 @@ main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return MaterialApp(
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('W2V'),
-          ),
-        ));
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Way2Vat POC'),
+        ),
+        body: BoxesManager('First'),
+      ),
+    );
   }
 }
+
